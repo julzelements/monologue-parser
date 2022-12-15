@@ -1,0 +1,23 @@
+{
+  "name": "monologue-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.3",
+    "@types/node": "^18.7.23",
+    "eslint": "^6.5.1",
+    "jest": "^29.1.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "redux-mock-store": "^1.5.4",
+    "redux-thunk": "^2.4.2",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "redux": "^4.2.0",
+    "ts-jest": "^29.0.3"
+  }
+}
