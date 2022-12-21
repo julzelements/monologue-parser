@@ -163,15 +163,6 @@ export const PARAMETERS = [
     parameter: CUTOFF,
     type: INTEGER,
     spec: {
-      upperByteOffset: 16,
-      lowerByteOffset: 30,
-      lowerBitsOffset: 0,
-    },
-  },
-  {
-    parameter: CUTOFF,
-    type: INTEGER,
-    spec: {
       upperByteOffset: 22,
       lowerByteOffset: 33,
       lowerBitsOffset: 4,
@@ -184,51 +175,6 @@ export const PARAMETERS = [
       upperByteOffset: 23,
       lowerByteOffset: 33,
       lowerBitsOffset: 6,
-    },
-  },
-  {
-    parameter: EG_ATTACK,
-    type: INTEGER,
-    spec: {
-      upperByteOffset: 24,
-      lowerByteOffset: 34,
-      lowerBitsOffset: 2,
-    },
-  },
-  {
-    parameter: EG_DECAY,
-    type: INTEGER,
-    spec: {
-      upperByteOffset: 25,
-      lowerByteOffset: 34,
-      lowerBitsOffset: 4,
-    },
-  },
-  {
-    parameter: LFO_RATE,
-    type: INTEGER,
-    spec: {
-      upperByteOffset: 26,
-      lowerByteOffset: 35,
-      lowerBitsOffset: 2,
-    },
-  },
-  {
-    parameter: LFO_INT,
-    type: INTEGER,
-    spec: {
-      upperByteOffset: 27,
-      lowerByteOffset: 35,
-      lowerBitsOffset: 4,
-    },
-  },
-  {
-    parameter: EG_INT,
-    type: INTEGER,
-    spec: {
-      upperByteOffset: 28,
-      lowerByteOffset: 35,
-      lowerBitsOffset: 0,
     },
   },
   {
@@ -255,7 +201,7 @@ export const PARAMETERS = [
     spec: {
       lowerByteOffset: 30,
       lowerBitsOffset: 4,
-      lowerBitsWidth: 3,
+      lowerBitsWidth: 2,
     },
   },
   {
@@ -271,18 +217,153 @@ export const PARAMETERS = [
     parameter: VCO1_OCTAVE,
     type: INTEGER,
     spec: {
-      lowerByteOffset: 31,
+      lowerByteOffset: 30,
       lowerBitsOffset: 4,
-      lowerBitsWidth: 3,
+      lowerBitsWidth: 2,
     },
   },
   {
-    parameter: VCO1_WAVE,
+    parameter: VCO2_OCTAVE,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 31,
+      lowerBitsOffset: 4,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: VCO2_WAVE,
     type: INTEGER,
     spec: {
       lowerByteOffset: 31,
       lowerBitsOffset: 6,
       lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: SYNC_RING,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 32,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: CUTOFF,
+    type: INTEGER,
+    spec: {
+      upperByteOffset: 22,
+      lowerByteOffset: 33,
+      lowerBitsOffset: 4,
+    },
+  },
+  {
+    parameter: RESONANCE,
+    type: INTEGER,
+    spec: {
+      upperByteOffset: 23,
+      lowerByteOffset: 33,
+      lowerBitsOffset: 6,
+    },
+  },
+  {
+    parameter: EG_TYPE,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 34,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: EG_TARGET,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 34,
+      lowerBitsOffset: 6,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: EG_ATTACK,
+    type: INTEGER,
+    spec: {
+      upperByteOffset: 24,
+      lowerByteOffset: 34,
+      lowerBitsOffset: 2,
+    },
+  },
+  {
+    parameter: EG_DECAY,
+    type: INTEGER,
+    spec: {
+      upperByteOffset: 25,
+      lowerByteOffset: 34,
+      lowerBitsOffset: 4,
+    },
+  },
+  {
+    parameter: EG_INT,
+    type: INTEGER,
+    spec: {
+      upperByteOffset: 28,
+      lowerByteOffset: 35,
+      lowerBitsOffset: 0,
+    },
+  },
+  {
+    parameter: LFO_RATE,
+    type: INTEGER,
+    spec: {
+      upperByteOffset: 27,
+      lowerByteOffset: 35,
+      lowerBitsOffset: 2,
+    },
+  },
+  {
+    parameter: LFO_INT,
+    type: INTEGER,
+    spec: {
+      upperByteOffset: 27,
+      lowerByteOffset: 35,
+      lowerBitsOffset: 4,
+    },
+  },
+  {
+    parameter: LFO_TYPE,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 36,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: LFO_MODE,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 36,
+      lowerBitsOffset: 2,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: LFO_TARGET,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 36,
+      lowerBitsOffset: 4,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: SEQ_TRIG,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 36,
+      lowerBitsOffset: 6,
+      lowerBitsWidth: 1,
     },
   },
 ];
@@ -643,8 +724,8 @@ const decodeProgram = (data) => {
       }
       default:
         break;
-    }
-    parsed[parameter] = value;
+      }
+      parsed[parameter] = value;
   });
   parsed["sequence"] = decodeSequence(data);
   return parsed;
