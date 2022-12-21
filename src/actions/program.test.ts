@@ -1,10 +1,14 @@
 import thunk from "redux-thunk";
 import configureMockStore from "redux-mock-store";
-import { INIT_PROGRAM, CUTOFF, VOICE_MODE } from "../minilogue/program";
+import { INIT_PROGRAM, CUTOFF, VOICE_MODE, MONOLOGUE_PROGRAM } from "../minilogue/program";
 import { PARAMETER_TO_CODE } from "../minilogue/midi";
 import * as actions from "./program";
 
 describe("program actions", () => {
+
+  it('hack', () => {
+    expect(MONOLOGUE_PROGRAM).toBe('')
+  })
   it("should create an action to set a parameter", () => {
     const expectedAction = {
       type: actions.PARAMETER_SET,
