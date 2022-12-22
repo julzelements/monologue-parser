@@ -432,6 +432,33 @@ export const PARAMETERS = [
       lowerBitsWidth: 4,
     },
   },
+  {
+    parameter: MICRO_TUNING,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 38,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: SCALE_KEY,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 39,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: PROGRAM_TUNING,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 37,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
 ];
 
 /**

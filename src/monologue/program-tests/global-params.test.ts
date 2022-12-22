@@ -499,4 +499,44 @@ describe("PROGRAM EDIT MODE", () => {
       });
     });
   });
+  describe("PITCH_SETTINGS", () => {
+    describe("MICRO_TUNING", () => {
+      const cases = [
+        [0, RESULT_0[program.MICRO_TUNING]],
+        [3, RESULT_1[program.MICRO_TUNING]], //  3 : Pythagorean
+        [19, RESULT_2[program.MICRO_TUNING]],// 19 : AFX006
+        [0, RESULT_3[program.MICRO_TUNING]],
+        [0, RESULT_4[program.MICRO_TUNING]],
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+    describe("SCALE_KEY", () => {
+      //  0~24 = -12Key ~ +12Key
+      const cases = [
+        [0, RESULT_0[program.SCALE_KEY]], // -12 Note
+        [7, RESULT_1[program.SCALE_KEY]], // -5 Note
+        [24, RESULT_2[program.SCALE_KEY]], // +12 Note
+        [0, RESULT_3[program.SCALE_KEY]], // -12 Note
+        [0, RESULT_4[program.SCALE_KEY]], // -12 Note
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+    describe("PROGRAM_TUNING", () => {
+      // 0~100 = -50Cent ~ +50Cent
+      const cases = [
+        [50, RESULT_0[program.PROGRAM_TUNING]], // 0
+        [75, RESULT_1[program.PROGRAM_TUNING]], // +25Cent
+        [100, RESULT_2[program.PROGRAM_TUNING]], // +50Cent
+        [50, RESULT_3[program.PROGRAM_TUNING]], // 0
+        [50, RESULT_4[program.PROGRAM_TUNING]], // 0
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+  });
 });
