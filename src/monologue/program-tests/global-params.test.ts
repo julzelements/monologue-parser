@@ -385,11 +385,6 @@ describe("UI PANEL", () => {
     });
   });
 });
-
-// export const PORTAMENTO_TIME = 28;
-// export const PORTAMENTO_MODE = 29;
-// export const SLIDE_TIME = 30;
-
 describe("PROGRAM EDIT MODE", () => {
   describe("PORTAMENTO", () => {
     describe("PORTAMENTO_TIME", () => {
@@ -431,32 +426,43 @@ describe("PROGRAM EDIT MODE", () => {
   });
   describe("SLIDER_FUNC", () => {
     describe("SLIDER_ASSIGN", () => {
-
       const sliderAssignMap = {
-        13 : "VCO 1 PITCH",
-        14 : "VCO 1 SHAPE",
-        17 : "VCO 2 PITCH",
-        18 : "VCO 2 SHAPE",
-        21 : "VCO 1 LEVEL",
-        22 : "VCO 2 LEVEL",
-        23 : "CUTOFF",
-        24 : "RESONANCE",
-        26 : "ATTACK",
-        27 : "DECAY",
-        28 : "EG INT",
-        31 : "LFO RATE",
-        32 : "LFO INT",
-        40 : "PORTAMENT",
-        56 : "PITCH BEND",
-        57 : "GATE TIME",
+        13: "VCO 1 PITCH",
+        14: "VCO 1 SHAPE",
+        17: "VCO 2 PITCH",
+        18: "VCO 2 SHAPE",
+        21: "VCO 1 LEVEL",
+        22: "VCO 2 LEVEL",
+        23: "CUTOFF",
+        24: "RESONANCE",
+        26: "ATTACK",
+        27: "DECAY",
+        28: "EG INT",
+        31: "LFO RATE",
+        32: "LFO INT",
+        40: "PORTAMENT",
+        56: "PITCH BEND",
+        57: "GATE TIME",
       };
 
       const cases = [
-        [TEST_0.misc.sliderAssign.value, sliderAssignMap[RESULT_0[program.SLIDER_ASSIGN]]],
-        ['VCO 2 LEVEL', sliderAssignMap[RESULT_1[program.SLIDER_ASSIGN]]], // error in the spec sheet
-        [TEST_2.misc.sliderAssign.value, sliderAssignMap[RESULT_2[program.SLIDER_ASSIGN]]],
-        [TEST_3.misc.sliderAssign.value, sliderAssignMap[RESULT_3[program.SLIDER_ASSIGN]]],
-        [TEST_4.misc.sliderAssign.value, sliderAssignMap[RESULT_4[program.SLIDER_ASSIGN]]],
+        [
+          TEST_0.misc.sliderAssign.value,
+          sliderAssignMap[RESULT_0[program.SLIDER_ASSIGN]],
+        ],
+        ["VCO 2 LEVEL", sliderAssignMap[RESULT_1[program.SLIDER_ASSIGN]]], // error in the spec sheet
+        [
+          TEST_2.misc.sliderAssign.value,
+          sliderAssignMap[RESULT_2[program.SLIDER_ASSIGN]],
+        ],
+        [
+          TEST_3.misc.sliderAssign.value,
+          sliderAssignMap[RESULT_3[program.SLIDER_ASSIGN]],
+        ],
+        [
+          TEST_4.misc.sliderAssign.value,
+          sliderAssignMap[RESULT_4[program.SLIDER_ASSIGN]],
+        ],
       ];
       test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
         expect(resultValue).toBe(testValue);
@@ -504,7 +510,7 @@ describe("PROGRAM EDIT MODE", () => {
       const cases = [
         [0, RESULT_0[program.MICRO_TUNING]],
         [3, RESULT_1[program.MICRO_TUNING]], //  3 : Pythagorean
-        [19, RESULT_2[program.MICRO_TUNING]],// 19 : AFX006
+        [19, RESULT_2[program.MICRO_TUNING]], // 19 : AFX006
         [0, RESULT_3[program.MICRO_TUNING]],
         [0, RESULT_4[program.MICRO_TUNING]],
       ];
@@ -567,11 +573,26 @@ describe("PROGRAM EDIT MODE", () => {
     });
     describe("CUTOFF_KEYBOARD_TRACK", () => {
       const cases = [
-        [TEST_0.misc.cutoffKeyTrack.value, RESULT_0[program.CUTOFF_KEYBOARD_TRACK]],
-        [TEST_1.misc.cutoffKeyTrack.value, RESULT_1[program.CUTOFF_KEYBOARD_TRACK]],
-        [TEST_2.misc.cutoffKeyTrack.value, RESULT_2[program.CUTOFF_KEYBOARD_TRACK]],
-        [TEST_3.misc.cutoffKeyTrack.value, RESULT_3[program.CUTOFF_KEYBOARD_TRACK]],
-        [TEST_4.misc.cutoffKeyTrack.value, RESULT_4[program.CUTOFF_KEYBOARD_TRACK]],
+        [
+          TEST_0.misc.cutoffKeyTrack.value,
+          RESULT_0[program.CUTOFF_KEYBOARD_TRACK],
+        ],
+        [
+          TEST_1.misc.cutoffKeyTrack.value,
+          RESULT_1[program.CUTOFF_KEYBOARD_TRACK],
+        ],
+        [
+          TEST_2.misc.cutoffKeyTrack.value,
+          RESULT_2[program.CUTOFF_KEYBOARD_TRACK],
+        ],
+        [
+          TEST_3.misc.cutoffKeyTrack.value,
+          RESULT_3[program.CUTOFF_KEYBOARD_TRACK],
+        ],
+        [
+          TEST_4.misc.cutoffKeyTrack.value,
+          RESULT_4[program.CUTOFF_KEYBOARD_TRACK],
+        ],
       ];
       test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
         expect(resultValue).toBe(testValue);
@@ -613,5 +634,10 @@ describe("PROGRAM EDIT MODE", () => {
         expect(resultValue).toBe(testValue);
       });
     });
+  });
+});
+describe("sequencer", () => {
+  test("sequencer", () => {
+    expect(RESULT_AFX).toMatchSnapshot();
   });
 });
