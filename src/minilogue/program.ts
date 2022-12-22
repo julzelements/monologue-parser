@@ -1010,6 +1010,5 @@ const encodeProgram = (program) => {
 };
 
 const INIT_PROGRAM = decodeProgram(INIT_PATCH);
-const MONOLOGUE_PROGRAM = decodeProgram(MONOLOGUE_PATCH)
 
-export { encodeProgram, decodeProgram, INIT_PATCH, INIT_PROGRAM, MONOLOGUE_PROGRAM };
+export { encodeProgram, decodeProgram, INIT_PATCH, INIT_PROGRAM };
