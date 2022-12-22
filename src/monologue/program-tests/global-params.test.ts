@@ -538,5 +538,80 @@ describe("PROGRAM EDIT MODE", () => {
         expect(resultValue).toBe(testValue);
       });
     });
+    describe("TRANSPOSE", () => {
+      // 0~100 = -50Cent ~ +50Cent
+      const cases = [
+        [50, RESULT_0[program.TRANSPOSE]], // 0
+        [75, RESULT_1[program.TRANSPOSE]], // +25Cent
+        [100, RESULT_2[program.TRANSPOSE]], // +50Cent
+        [50, RESULT_3[program.TRANSPOSE]], // 0
+        [50, RESULT_4[program.TRANSPOSE]], // 0
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+  });
+  describe("OTHER_SETTINGS", () => {
+    describe("LFO_BPM_SYNC", () => {
+      const cases = [
+        [TEST_0.misc.bpmSync.value, RESULT_0[program.LFO_BPM_SYNC]],
+        [TEST_1.misc.bpmSync.value, RESULT_1[program.LFO_BPM_SYNC]],
+        [TEST_2.misc.bpmSync.value, RESULT_2[program.LFO_BPM_SYNC]],
+        [TEST_3.misc.bpmSync.value, RESULT_3[program.LFO_BPM_SYNC]],
+        [TEST_4.misc.bpmSync.value, RESULT_4[program.LFO_BPM_SYNC]],
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+    describe("CUTOFF_KEYBOARD_TRACK", () => {
+      const cases = [
+        [TEST_0.misc.cutoffKeyTrack.value, RESULT_0[program.CUTOFF_KEYBOARD_TRACK]],
+        [TEST_1.misc.cutoffKeyTrack.value, RESULT_1[program.CUTOFF_KEYBOARD_TRACK]],
+        [TEST_2.misc.cutoffKeyTrack.value, RESULT_2[program.CUTOFF_KEYBOARD_TRACK]],
+        [TEST_3.misc.cutoffKeyTrack.value, RESULT_3[program.CUTOFF_KEYBOARD_TRACK]],
+        [TEST_4.misc.cutoffKeyTrack.value, RESULT_4[program.CUTOFF_KEYBOARD_TRACK]],
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+    describe("CUTOFF_VELOCITY", () => {
+      const cases = [
+        [TEST_0.misc.cutoffVelocity.value, RESULT_0[program.CUTOFF_VELOCITY]],
+        [TEST_1.misc.cutoffVelocity.value, RESULT_1[program.CUTOFF_VELOCITY]],
+        [TEST_2.misc.cutoffVelocity.value, RESULT_2[program.CUTOFF_VELOCITY]],
+        [TEST_3.misc.cutoffVelocity.value, RESULT_3[program.CUTOFF_VELOCITY]],
+        [TEST_4.misc.cutoffVelocity.value, RESULT_4[program.CUTOFF_VELOCITY]],
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+    describe("AMP_VELOCITY", () => {
+      const cases = [
+        [0, RESULT_0[program.AMP_VELOCITY]],
+        [50, RESULT_1[program.AMP_VELOCITY]],
+        [127, RESULT_2[program.AMP_VELOCITY]],
+        [0, RESULT_3[program.AMP_VELOCITY]],
+        [0, RESULT_4[program.AMP_VELOCITY]],
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
+    describe("PROGRAM_LEVEL", () => {
+      const cases = [
+        [102, RESULT_0[program.PROGRAM_LEVEL]],
+        [112, RESULT_1[program.PROGRAM_LEVEL]],
+        [127, RESULT_2[program.PROGRAM_LEVEL]],
+        [102, RESULT_3[program.PROGRAM_LEVEL]],
+        [102, RESULT_4[program.PROGRAM_LEVEL]],
+      ];
+      test.each(cases)("Expected:%p Result:%p", (testValue, resultValue) => {
+        expect(resultValue).toBe(testValue);
+      });
+    });
   });
 });

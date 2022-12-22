@@ -459,6 +459,64 @@ export const PARAMETERS = [
       lowerBitsWidth: 8,
     },
   },
+  // I think transpose applies when there is no custom scale
+  // otherwise the pitch is changed with SCALE_KEY
+  // no mention of it in either instruction manual or the spec sheet
+  // will have to hunt for the relevant address space
+  {
+    parameter: TRANSPOSE, 
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 37,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: LFO_BPM_SYNC, 
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 44,
+      lowerBitsOffset: 3,
+      lowerBitsWidth: 1,
+    },
+  },
+  {
+    parameter: CUTOFF_KEYBOARD_TRACK, 
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 44,
+      lowerBitsOffset: 6,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: CUTOFF_VELOCITY, 
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 44,
+      lowerBitsOffset: 4,
+      lowerBitsWidth: 2,
+    },
+  },
+  {
+    parameter: AMP_VELOCITY, 
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 46,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: PROGRAM_LEVEL, 
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 45,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
 ];
 
 /**
@@ -817,8 +875,8 @@ const decodeProgram = (data) => {
       }
       default:
         break;
-      }
-      parsed[parameter] = value;
+    }
+    parsed[parameter] = value;
   });
   parsed["sequence"] = decodeSequence(data);
   return parsed;
