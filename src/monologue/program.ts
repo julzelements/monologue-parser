@@ -366,6 +366,72 @@ export const PARAMETERS = [
       lowerBitsWidth: 1,
     },
   },
+  {
+    parameter: PORTAMENTO_TIME,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 41,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: PORTAMENTO_MODE,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 44,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 1,
+    },
+  },
+  {
+    parameter: SLIDE_TIME,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 40,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: SLIDER_ASSIGN,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 42,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: SLIDER_RANGE, // this param is hiding. Punch out two identical sysex dumps.
+    // change nothing but this param
+    // diff the two integer dumps
+    // see where it lives...
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 40,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 8,
+    },
+  },
+  {
+    parameter: BEND_RANGE_POSITIVE,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 43,
+      lowerBitsOffset: 0,
+      lowerBitsWidth: 4,
+    },
+  },
+  {
+    parameter: BEND_RANGE_NEGATIVE,
+    type: INTEGER,
+    spec: {
+      lowerByteOffset: 43,
+      lowerBitsOffset: 4,
+      lowerBitsWidth: 4,
+    },
+  },
 ];
 
 /**

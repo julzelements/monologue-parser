@@ -1,0 +1,647 @@
+{
+  "1": "<afx acid3>\u0000",
+  "2": 0,
+  "3": 0,
+  "4": 512,
+  "5": 0,
+  "6": 1,
+  "7": 2,
+  "8": 1023,
+  "9": 0,
+  "10": 0,
+  "11": 2,
+  "12": 1,
+  "13": 1023,
+  "14": 1023,
+  "15": 488,
+  "16": 909,
+  "17": 0,
+  "18": 0,
+  "19": 485,
+  "20": 515,
+  "21": 0,
+  "22": 1,
+  "23": 1,
+  "24": 512,
+  "25": 512,
+  "26": 2,
+  "27": 0,
+  "sequence": {
+    "motionSlots": [
+      {
+        "motionOn": true,
+        "smoothOn": true,
+        "parameterId": 3
+      },
+      {
+        "motionOn": false,
+        "smoothOn": false,
+        "parameterId": 128
+      },
+      {
+        "motionOn": false,
+        "smoothOn": false,
+        "parameterId": 128
+      },
+      {
+        "motionOn": true,
+        "smoothOn": true,
+        "parameterId": 0
+      }
+    ],
+    "steps": [
+      {
+        "on": false,
+        "motionOn": [0, 0, 1, 1],
+        "notes": [
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 32,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 32,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 32,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 32,
+            "triggerSwitch": 1
+          }
+        ],
+        "motions": [
+          [29, 0],
+          [90, 0],
+          [255, 0],
+          [255, 255]
+        ],
+        "switch": true
+      },
+      {
+        "on": false,
+        "motionOn": [1, 1, 1, 1],
+        "notes": [
+          {
+            "note": 127,
+            "velocity": 0,
+            "gateTime": 1,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 127,
+            "velocity": 0,
+            "gateTime": 1,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 1,
+            "gateTime": 46,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 1,
+            "gateTime": 46,
+            "triggerSwitch": 1
+          }
+        ],
+        "motions": [
+          [174, 174],
+          [0, 0],
+          [0, 0],
+          [0, 0]
+        ],
+        "switch": true
+      },
+      {
+        "on": false,
+        "motionOn": [1, 1, 0, 0],
+        "notes": [
+          {
+            "note": 0,
+            "velocity": 127,
+            "gateTime": 1,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 127,
+            "gateTime": 1,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 127,
+            "gateTime": 1,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 127,
+            "gateTime": 1,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [206, 206],
+          [206, 206],
+          [30, 0],
+          [59, 0]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 1, 1],
+        "notes": [
+          {
+            "note": 22,
+            "velocity": 0,
+            "gateTime": 127,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 127,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 127,
+            "gateTime": 105,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 127,
+            "gateTime": 105,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [105, 105],
+          [255, 255],
+          [255, 255],
+          [29, 0]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 1, 0, 0],
+        "notes": [
+          {
+            "note": 43,
+            "velocity": 50,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 50,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 22,
+            "velocity": 50,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 50,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [120, 120],
+          [120, 120],
+          [0, 0],
+          [0, 0]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 1, 1, 1],
+        "notes": [
+          {
+            "note": 50,
+            "velocity": 22,
+            "gateTime": 100,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 109,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 52,
+            "velocity": 93,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 93,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [0, 0],
+          [34, 34],
+          [34, 34],
+          [0, 0]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [1, 0, 0, 0],
+        "notes": [
+          {
+            "note": 0,
+            "velocity": 61,
+            "gateTime": 113,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 113,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 33,
+            "velocity": 54,
+            "gateTime": 113,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 113,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [162, 162],
+          [162, 162],
+          [133, 133],
+          [133, 133]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 1, 1, 1],
+        "notes": [
+          {
+            "note": 42,
+            "velocity": 30,
+            "gateTime": 54,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 42,
+            "velocity": 0,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 42,
+            "velocity": 52,
+            "gateTime": 37,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 42,
+            "velocity": 0,
+            "gateTime": 37,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [37, 37],
+          [0, 0],
+          [0, 0],
+          [6, 6]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 1, 1],
+        "notes": [
+          {
+            "note": 6,
+            "velocity": 0,
+            "gateTime": 61,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 6,
+            "velocity": 0,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 65,
+            "gateTime": 54,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 0,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [87, 87],
+          [87, 87],
+          [201, 201],
+          [201, 201]
+        ],
+        "switch": true
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 1, 1],
+        "notes": [
+          {
+            "note": 57,
+            "velocity": 0,
+            "gateTime": 30,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 61,
+            "velocity": 0,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 69,
+            "velocity": 0,
+            "gateTime": 44,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 76,
+            "velocity": 0,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [182, 0],
+          [43, 43],
+          [43, 43],
+          [0, 0]
+        ],
+        "switch": true
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 0, 0],
+        "notes": [
+          {
+            "note": 0,
+            "velocity": 89,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 93,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 76,
+            "velocity": 0,
+            "gateTime": 28,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 84,
+            "velocity": 0,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [68, 0],
+          [182, 0],
+          [100, 100],
+          [100, 100]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 1, 1],
+        "notes": [
+          {
+            "note": 0,
+            "velocity": 93,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 99,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 105,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 112,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [34, 0],
+          [70, 0],
+          [182, 0],
+          [74, 74]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 0, 0],
+        "notes": [
+          {
+            "note": 74,
+            "velocity": 0,
+            "gateTime": 1,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 74,
+            "velocity": 0,
+            "gateTime": 10,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 0,
+            "velocity": 112,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 120,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [0, 0],
+          [41, 0],
+          [61, 0],
+          [182, 0]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 1, 1],
+        "notes": [
+          {
+            "note": 34,
+            "velocity": 125,
+            "gateTime": 10,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 34,
+            "velocity": 125,
+            "gateTime": 19,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 34,
+            "velocity": 125,
+            "gateTime": 27,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 34,
+            "velocity": 125,
+            "gateTime": 36,
+            "triggerSwitch": 1
+          }
+        ],
+        "motions": [
+          [0, 0],
+          [0, 0],
+          [33, 0],
+          [59, 0]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 0, 0],
+        "notes": [
+          {
+            "note": 54,
+            "velocity": 36,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 36,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 36,
+            "velocity": 0,
+            "gateTime": 36,
+            "triggerSwitch": 1
+          },
+          {
+            "note": 36,
+            "velocity": 0,
+            "gateTime": 44,
+            "triggerSwitch": 1
+          }
+        ],
+        "motions": [
+          [180, 188],
+          [0, 0],
+          [0, 0],
+          [75, 0]
+        ],
+        "switch": false
+      },
+      {
+        "on": false,
+        "motionOn": [0, 0, 1, 1],
+        "notes": [
+          {
+            "note": 50,
+            "velocity": 118,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 118,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 54,
+            "velocity": 118,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          },
+          {
+            "note": 0,
+            "velocity": 118,
+            "gateTime": 0,
+            "triggerSwitch": 0
+          }
+        ],
+        "motions": [
+          [188, 194],
+          [196, 196],
+          [0, 0],
+          [0, 0]
+        ],
+        "switch": false
+      }
+    ]
+  }
+}

@@ -1043,7 +1043,7 @@ Below is a table for each parameter.
    17 : VCO 2 PITCH
    18 : VCO 2 SHAPE
    21 : VCO 1 LEVEL
-   22 : VCO 1 LEVEL
+   22 : VCO 1 LEVEL  (error in the spec sheet, correct value is 'VCO 2 LEVEL')
    23 : CUTOFF
    24 : RESONANCE
    26 ; ATTACK
